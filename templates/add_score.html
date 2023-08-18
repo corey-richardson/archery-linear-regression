@@ -1,0 +1,47 @@
+<link href="static/style.css" rel="stylesheet" />
+
+<div class="upper container">
+    <h1>Add New Score</h1>
+</div>
+
+<div class="lower container">
+    <form method="post">
+
+        {{ get_new_score.hidden_tag() }}
+
+        <!-- Season -->
+        <h2> {{ get_new_score.season.label }} </h2>
+        {{ get_new_score.season() }}
+
+        <!-- Average arrow score -->
+        <h2> {{ get_new_score.arrow_average.label }} </h2>
+        {{ get_new_score.arrow_average() }}
+
+        <!-- Distance and Units -->
+        <h2> {{ get_new_score.distance.label }} </h2>
+        {{ get_new_score.distance() }} {{ get_new_score.units() }}
+
+        <!-- Date of shoot -->
+        <h2> {{ get_new_score.date.label }} </h2>
+        {{ get_new_score.date() }}
+
+        <!-- How many golds? (Arrows with score >9) -->
+        <h2> {{ get_new_score.golds.label }} </h2>
+        {{ get_new_score.golds() }}
+
+        <!-- How many arrows? -->
+        <h2> {{ get_new_score.total_arrows.label }} </h2>
+        {{ get_new_score.total_arrows() }}
+
+        <!-- Was the shoot at a competition or club practice? -->
+        <h2> {{ get_new_score.is_comp.label }} </h2>
+        {{ get_new_score.is_comp() }}
+
+        <br><br>
+        {{ get_new_score.submit() }}
+
+    </form>
+
+    <a href="/">Return to Homepage</a>
+</div>
+
