@@ -25,15 +25,17 @@ b {
 }
 
 a {
-    color: white;
+    color: var(--yb_dark_blue);
     font-size: large;
     padding: 0px 15px;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 a:hover {
-    color: var(--yb_blue);
+    color: var(--yb_light_blue);
     background-color: var(--yb_dark_blue);
+    text-decoration: underline;
 }
 
 /* Table styling for 'display' route */
@@ -71,22 +73,14 @@ tr:nth-child(even) {
 .container {
     text-align: center;
 
-    background-color: var(--yb_blue);
+    background-color: var(--yb_light_blue);
 
-    border: var(--yb_light_blue);
+    border: var(--yb_blue);
     border-style: solid;
     border-radius: 20px;
     border-width: 5px;
 
     padding: 10px 0px;
+    margin: 10px 0;
 }
 
-/* change border of containers to link two together */
-.lower {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-.upper {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}

@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+collecting ... collected 7 items
+
+tests/test_forms.py::test_GetScoreData_empty PASSED                      [ 14%]
+tests/test_forms.py::test_GetScoreData_valid PASSED                      [ 28%]
+tests/test_forms.py::test_GetScoreData_invalid PASSED                    [ 42%]
+tests/test_forms.py::test_GetNewScore_empty PASSED                       [ 57%]
+tests/test_forms.py::test_GetNewScore_valid PASSED                       [ 71%]
+tests/test_forms.py::test_GetNewScore_invalid PASSED                     [ 85%]
+tests/test_forms.py::test_GetNewScore_value_out_of_range PASSED          [100%]
+
+=============================== warnings summary ===============================
+../../home/codespace/.python/current/lib/python3.10/site-packages/flask_wtf/recaptcha/widgets.py:2
+../../home/codespace/.python/current/lib/python3.10/site-packages/flask_wtf/recaptcha/widgets.py:2
+  /home/codespace/.python/current/lib/python3.10/site-packages/flask_wtf/recaptcha/widgets.py:2: DeprecationWarning: 'flask.Markup' is deprecated and will be removed in Flask 2.4. Import 'markupsafe.Markup' instead.
+    from flask import Markup
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 7 passed, 2 warnings in 1.63s =========================
