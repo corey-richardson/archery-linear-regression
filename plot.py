@@ -156,3 +156,9 @@ dist_comp = score_data.groupby([score_data.distance, score_data.is_comp])
 dist_comp_cols = dist_comp[['arrow_average','arrows','golds_pct']]
 dist_comp_summary = dist_comp_cols.mean()
 print(f"Score Data grouped by Competition Status: \n{dist_comp_summary}\n")
+
+comp = score_data.groupby(score_data.is_comp)
+comp_cols = comp[["arrows"]]
+comp_summary = comp_cols.sum()
+comp_summary["dozen"] = comp_summary.arrows / 12
+print(f"Number of arrows grouped by Competition Status: \n{comp_summary}\n")
