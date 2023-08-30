@@ -106,7 +106,7 @@ for i, avg in enumerate(averages):
 plt.axhline(280 / 36, color='k', linestyle="dashed", linewidth=0.9) # Compound
 plt.axhline(252 / 36, color='k', linestyle="dashed", linewidth=0.9) # Recurve
 
-plt.savefig("graphs/distance_fig.png")
+plt.savefig("graphs/distance_fig.png", dpi=500)
 plt.clf()
 
 #############################
