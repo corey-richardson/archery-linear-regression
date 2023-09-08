@@ -7,6 +7,8 @@ from datetime import date
 
 YEAR = date.today().strftime("%y")
 score_data = pd.read_csv(f"static/arrow_scores_outdoors_{YEAR}.csv", header=0)
+# score_data = pd.read_csv(f"static/arrow_scores_indoors_{YEAR}.csv", header=0)
+
 
 #########################
 ## DATA PRE-PROCESSING ##
